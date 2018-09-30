@@ -1,0 +1,96 @@
+ext{
+    //Versions Section
+    //Java
+    rxjavaVersion = "2.2.2"
+    //dagger
+    daggerVersion = "2.17"
+
+    rxandroidVersion = "2.1.0"
+
+    okhttpVersion = "3.4.1"
+    retrofitVersion = "2.1.0"
+
+    //Testing
+    junitVersion = '4.12'
+    mockitoVersion = '1.10.19'
+    powerMockito = '1.6.2'
+    hamcrestVersion = '1.3'
+    runnerVersion = '1.0.2'
+    rulesVersion = '1.0.2'
+    espressoVersion = '3.0.2'
+
+//    Android Lib
+    androidSupportVersion = "28.0.0"
+    butterknifeVersion = "8.8.1"
+    scalableDPVersion = "1.0.5"
+    utilsVersion = "1.0.7"
+    progressLibVersion = "2.1.3"
+    toastLibVersion  = "2.0.4"
+    imageChooserVersion = "1.2.5"
+    glideVersion = "4.8.0"
+    rxPermissionVersion = "0.10.2"
+    webViewVersion   = "1.2.7"
+
+
+    // Dependencies Section
+
+    libraries = [
+
+            dagger                  : "com.google.dagger:dagger:${daggerVersion}",
+            rxjava                  : "io.reactivex.rxjava2:rxjava:${rxjavaVersion}",
+            rxandroid               : "io.reactivex.rxjava2:rxandroid:${rxandroidVersion}",
+            okhttp                  : "com.squareup.okhttp3:okhttp:${okhttpVersion}",
+            okhttpLogging           : "com.squareup.okhttp3:logging-interceptor:${okhttpVersion}",
+            retrofit                : "com.squareup.retrofit2:retrofit:${retrofitVersion}",
+            retrofitConverter       : "com.squareup.retrofit2:converter-gson:${retrofitVersion}",
+            retrofitAdapter         : "com.squareup.retrofit2:adapter-rxjava:${retrofitVersion}",
+    ]
+
+
+    //android related libraries
+    appLibraries = [
+
+            appCompatSupport        : "com.android.support:appcompat-v7:${androidSupportVersion}",
+            designSupport           : "com.android.support:design:${androidSupportVersion}",
+            cardView                : "com.android.support:cardview-v7:${androidSupportVersion}",
+            recyclerView            : "com.android.support:recyclerview-v7:${androidSupportVersion}",
+            scalableDP              : "com.intuit.sdp:sdp-android:${scalableDPVersion}",
+            butterknife             : "com.jakewharton:butterknife:${butterknifeVersion}",
+            progressLib             : "com.wang.avi:library:${progressLibVersion}",
+            toastLib                : "com.tapadoo.android:alerter:${toastLibVersion}",
+            utils                   : "com.mirhoseini.utils:utils:${utilsVersion}",
+            imageChooser            : "com.fxn769:pix:${imageChooserVersion}",
+            glide                   : "com.github.bumptech.glide:glide:${glideVersion}",
+            rxPermission            : "com.github.tbruyelle:rxpermissions:${rxPermissionVersion}",
+            webView                 : "com.thefinestartist:finestwebview:${webViewVersion}",
+
+
+    ]
+
+    testingLibraries = [
+
+            // Dependencies for local unit tests
+            junit                   : "junit:junit:$junitVersion",
+            mockito                 : "org.mockito:mockito-all:$mockitoVersion",
+            hamcrest                : "org.hamcrest:hamcrest-all:$hamcrestVersion",
+            powerMockitoModule      : "org.powermock:powermock-module-junit4:$powerMockito",
+            powerMockitoApi         : "org.powermock:powermock-api-mockito:$powerMockito",
+
+            // Android Testing Support Library's runner and rules
+            testSupportRunner       : "com.android.support.test:runner:$runnerVersion",
+            testSupportRules        : "com.android.support.test:rules:$rulesVersion",
+
+            // Espresso UI Testing dependencies.
+            espressoCore            : "com.android.support.test.espresso:espresso-core:$espressoVersion",
+            espressoContrib         : "com.android.support.test.espresso:espresso-contrib:$espressoVersion",
+            espressoIdlingResource  : "com.android.support.test.espresso:espresso-idling-resource:$espressoVersion"
+
+    ]
+
+
+    aptLibraries = [
+            butterknifeCompiler     : "com.jakewharton:butterknife-compiler:${butterknifeVersion}",
+            daggerCompiler          : "com.google.dagger:dagger-compiler:${daggerVersion}",
+            glideCompiler           : "com.github.bumptech.glide:compiler:${glideVersion}",
+    ]
+}

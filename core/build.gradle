@@ -1,0 +1,26 @@
+apply plugin: 'java-library'
+configurations {
+    provided
+}
+sourceSets {
+    main {
+        compileClasspath += configurations.provided
+    }
+}
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    api rootProject.ext.libraries.rxjava
+
+    api rootProject.ext.libraries.dagger
+    provided rootProject.ext.aptLibraries.daggerCompiler
+
+
+    api rootProject.ext.libraries.retrofit
+    api rootProject.ext.libraries.retrofitConverter
+    api rootProject.ext.libraries.retrofitAdapter
+    api rootProject.ext.libraries.okhttp
+    api rootProject.ext.libraries.okhttpLogging
+}
+
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"
