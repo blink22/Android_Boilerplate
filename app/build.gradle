@@ -10,6 +10,8 @@ android {
         applicationId "com.blink22.skeleton"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
+
+        multiDexEnabled true
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -44,6 +46,9 @@ dependencies {
     implementation "com.android.support:support-vector-drawable:$rootProject.supportLibraryVersion"
     implementation "com.android.support:animated-vector-drawable:$rootProject.supportLibraryVersion"
     implementation "com.android.support.constraint:constraint-layout:$rootProject.constraintLayoutVersion"
+
+    // enable multidexing
+    implementation "com.android.support:multidex:$rootProject.multiDexVersion"
 
     // android kotlin Extensions
     implementation "androidx.core:core-ktx:$rootProject.androidKTXVersion"

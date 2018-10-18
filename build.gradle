@@ -32,10 +32,11 @@ ext {
     targetSdkVersion = 28
     compileSdkVersion = 28
 
-    // App dependencies
+    // android dependencies
     supportLibraryVersion = '28.0.0'
     constraintLayoutVersion = '1.1.2'
     androidKTXVersion = '0.3'
+    multiDexVersion = '1.0.3'
 
     //Test dependencies
     junitVersion = '4.12'
