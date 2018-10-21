@@ -1,0 +1,2 @@
+* The MVP architecture of this [sample](https://github.com/MindorksOpenSource/android-mvp-architecture) was adopted in creating the skeleton. 
+* Although the architecture of this [sample](https://github.com/MindorksOpenSource/android-kotlin-mvp-architecture) is a little bit different, it may be helpful as it's totally implemented in Kotlin.
