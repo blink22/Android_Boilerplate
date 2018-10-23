@@ -10,5 +10,4 @@ import com.blink22.skeleton.ui.splash.view.SplashView
  * islamsalah007@gmail.com
  */
 interface SplashPresenter<V : SplashView> : BasePresenter<V> {
-
 }

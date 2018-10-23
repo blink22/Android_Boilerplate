@@ -1,5 +1,6 @@
 package com.blink22.skeleton.ui.base.presenter
 
+import com.blink22.skeleton.data.DataManager
 import com.blink22.skeleton.ui.base.view.BaseView
 
 /**
@@ -8,7 +9,7 @@ import com.blink22.skeleton.ui.base.view.BaseView
  * https://github.com/IslamSalah
  * islamsalah007@gmail.com
  */
-abstract class BasePresenterImp<V : BaseView> : BasePresenter<V> {
+abstract class BasePresenterImp<V : BaseView>(val dataManager: DataManager) : BasePresenter<V> {
 
     private var view: V? = null
 
